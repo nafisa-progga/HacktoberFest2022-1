@@ -1,0 +1,35 @@
+class Calculator:
+    def __init__(self):
+        print("Let’s Calculate!")
+    def add(self, num1, num2): 
+        rslt = num1 + num2
+        print("Result:",rslt)
+    def  subtract(self, num1, num2): 
+        rslt = num1 - num2
+        print("Result:",rslt)
+    def multiply(self, num1, num2):
+        rslt = num1 * num2
+        print("Result:",rslt)
+    def divide(self, num1, num2):
+        rslt = num1 / num2
+        print("Result:",rslt)
+        
+obj = Calculator()
+
+first_value = int(input('Please enter the first value: '))
+operator = input('Please enter the operator: ')
+second_value = int(input('Please enter the second value: '))
+
+print("Value 1:",first_value)
+print("Operator:", operator)
+print("Value 2:",second_value)
+
+
+if (operator == "+"):
+    obj.add(first_value,second_value)
+if (operator == "-"):
+    obj.subtract(first_value,second_value)
+if (operator == "*"):
+    obj.multiply(first_value,second_value)
+if (operator == "/"):
+    obj.divide(first_value,second_value)    
